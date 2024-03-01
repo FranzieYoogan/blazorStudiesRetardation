@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\blazorCourse2\\testing\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\testing.bundle.scp.css",
+      "PackagePath": "staticwebassets\\testing.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\blazorCourse2\\testing\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\blazorCourse2\\testing\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\blazorCourse2\\testing\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\blazorCourse2\\testing\\wwwroot\\css\\testing.css",
+      "PackagePath": "staticwebassets\\css\\testing.css"
+    },
+    {
+      "Id": "C:\\blazorCourse2\\testing\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.testing.props",
+      "PackagePath": "build\\testing.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.testing.props",
+      "PackagePath": "buildMultiTargeting\\testing.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.testing.props",
+      "PackagePath": "buildTransitive\\testing.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.testing.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,35 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+
+<link rel="stylesheet" type="" href="css/testing.css">
+<PageTitle>Counter</PageTitle>
+
+<h1>MULTIPLICATION TABLE</h1>
+
+
+ 
+    @for(int y = 0; y<=10; y++) {
+        int z = 4;
+        int result = y * z ;
+
+        <p class="value" style="@style" >4 * @y = @result</p>
+
+
+    }
+
+
+
+
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+        private string style = "";
+
+    private void IncrementCount()
+    {
+
+      style = "visibility:visible";
+    }
+}
