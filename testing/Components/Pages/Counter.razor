@@ -26,10 +26,24 @@
 
 @code {
         private string style = "";
+        private int click = 0;
 
     private void IncrementCount()
     {
+        click++;
 
-      style = "visibility:visible";
+        if(click == 1){
+
+  style = "visibility:visible";
+        } else {
+
+            click = 0;
+
+  style = "visibility:hidden";
+
+        }
+
+
+    
     }
 }
