@@ -1,0 +1,67 @@
+﻿@page "/users"
+@attribute [StreamRendering]
+
+<PageTitle>Weather</PageTitle>
+
+<h1>USERS</h1>
+
+
+
+@if (users == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Users ID</th>
+                <th>User Name</th>
+                <th>User Password</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+          @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.userName</td>
+                    <td>@user.userPassword</td>
+          
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+  private User[]? users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(500);
+
+
+        var Id = new[] { 1,2,3};
+        
+        var userName = new[] { "Joshua", "Biruleibes", "Jabirom"};
+        var userPassword = new[] { "12345678", "12345678", "12345678"};
+        users = Enumerable.Range(1, 5).Select(index => new User
+        {
+                Id = Id[1],
+                userName = userName[1],
+                userPassword = userPassword[1]
+
+        }).ToArray();
+    }
+
+    private class User
+    {
+     public int Id { get; set; }
+    public string? userName{ get; set; }
+ public string? userPassword{ get; set; }
+    }
+}
