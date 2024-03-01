@@ -1,10 +1,9 @@
 ﻿@page "/users"
 @attribute [StreamRendering]
 
-<PageTitle>Weather</PageTitle>
+<PageTitle>USERS</PageTitle>
 
-<h1>USERS</h1>
-
+<h1>Users</h1>
 
 
 @if (users == null)
@@ -16,20 +15,20 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Users ID</th>
-                <th>User Name</th>
-                <th>User Password</th>
-                
+                <th>ID</th>
+                <th>user Name</th>
+                <th>use Password</th>
+            
             </tr>
         </thead>
         <tbody>
-          @foreach (var user in users)
+            @foreach (var user in users)
             {
                 <tr>
                     <td>@user.Id</td>
                     <td>@user.userName</td>
                     <td>@user.userPassword</td>
-          
+               
                 </tr>
             }
         </tbody>
@@ -49,12 +48,11 @@ else
         
         var userName = new[] { "Joshua", "Biruleibes", "Jabirom"};
         var userPassword = new[] { "12345678", "12345678", "12345678"};
-        users = Enumerable.Range(1, 5).Select(index => new User
+       users = Enumerable.Range(0, 3).Select(Id => new User
         {
-                Id = Id[1],
-                userName = userName[1],
-                userPassword = userPassword[1]
-
+            Id =   Id,
+           userName =  userName[Id],
+            userPassword = userPassword[Id]
         }).ToArray();
     }
 
